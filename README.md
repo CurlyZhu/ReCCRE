@@ -3,17 +3,18 @@ Code and data of EACL 2026 findings ["Show or Tell? Modeling the evolution of re
 
 # Data
 
+<i> Disclaimer: Our data work performs annotations on top of published data resources, including [WildChat](https://wildchat.allen.ai/) and the [Stanford Politeness corpus](https://aclanthology.org/P13-1025/). While the ReCCRE annotation scheme and analysis scripts are open-source, note that **this does not circumvent or override the licensing and copyrights of source datasets**, and this repo does not license the original WildChat database. Any further application or re-distribution of the annotated data should still abide fully with the source dataset, such as the requirements of attribution and risk management. </i>
+
 ## Core data source
 <b>ReCCRE core users</b>: `core_user_encoded.npz` [[Download link]](https://drive.google.com/file/d/18ulWN_Ecvh8Ik4KYoKP2b2c7W_uAyLsF/view?usp=sharing) (182MB)
 
 <b> When you have obtained the data, please put it under `datasets/wildchat/`. </b>
 
-This includes the 59,175 chat input from 2,092 core users.
-The embeddings generated from gte-large-en-v1.5 has been incorporated.
+This includes the 59,175 chat input from 2,092 core users, derived from [the WildChat dataset](https://wildchat.allen.ai/) created and [published](https://openreview.net/forum?id=Bl8u7ZRlbM) by Wenting Zhao et al. under the [Open Data Commons Attribution (ODC-BY) License](https://opendatacommons.org/licenses/by/). The annotations and other derivations are under [the MIT license](https://opensource.org/license/mit).
 
 The dataset follows the format of WildChat, and each data point inherits the major attributes from there (under keys `first_turn` and `conversation_metadata`), such as the model name and hashed IP.
 
-The data used in our work is collected under a separate new key, `processed_first_turn`.
+The data used in our work is collected under a separate new key, `processed_first_turn`. The embeddings generated from gte-large-en-v1.5 have been incorporated.
 
 
 ## Stanford Politeness datasets

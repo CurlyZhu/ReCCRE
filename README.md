@@ -10,7 +10,7 @@ Code and data of EACL 2026 findings ["Show or Tell? Modeling the evolution of re
 
 <b> When you have obtained the data, please put it under `datasets/wildchat/`. </b>
 
-This includes the 59,175 chat input from 2,092 core users, derived from [the WildChat dataset](https://wildchat.allen.ai/) created and [published](https://openreview.net/forum?id=Bl8u7ZRlbM) by Wenting Zhao et al. under the [Open Data Commons Attribution (ODC-BY) License](https://opendatacommons.org/licenses/by/). The annotations and other derivations are under [the MIT license](https://opensource.org/license/mit).
+This includes the 59,175 chat input from 2,092 core users, derived from [the WildChat dataset](https://wildchat.allen.ai/) created and [published](https://openreview.net/forum?id=Bl8u7ZRlbM) by Wenting Zhao et al. under the [Open Data Commons Attribution (ODC-BY) License](https://opendatacommons.org/licenses/by/). The annotations and other derivations are under [the MIT license](https://opensource.org/license/mit) of this work.
 
 The dataset follows the format of WildChat, and each data point inherits the major attributes from there (under keys `first_turn` and `conversation_metadata`), such as the model name and hashed IP.
 
@@ -18,7 +18,7 @@ The data used in our work is collected under a separate new key, `processed_firs
 
 
 ## Stanford Politeness datasets
-The ReCCRE annotation scheme can naturally be applied to other request-making conversations, including the key resource in related fields, the Stanford Politeness corpus. We provide processed versions of Stanford Politeness in the same format as the main dataset under `datasets/stanford_politeness_dataset/`.
+The ReCCRE annotation scheme can naturally be applied to other request-making conversations, including a key resource in related fields, the [Stanford Politeness corpus](https://aclanthology.org/P13-1025/). We provide processed versions of Stanford Politeness in the same format as the main dataset under `datasets/stanford_politeness_dataset/`.
 
 ## Anchor points
 A few anchor points are used to construct and visualize the expression types, including the embeddings for the 41 main anchors in the experiments (`datasets/baseline_anchors_full.npy`) and some complementary anchors (`datasets/complementary_baselines.json`). In most cases these are util files that won't need to be inspected or modified.
